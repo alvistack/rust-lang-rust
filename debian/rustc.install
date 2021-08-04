@@ -1,0 +1,9 @@
+rustc/bin/rust-gdb usr/bin/
+rustc/bin/rust-gdbgui usr/bin/
+rustc/bin/rust-lldb usr/bin/
+rustc/bin/rustc usr/bin/
+rustc/bin/rustdoc usr/bin/
+rustc/lib/*.so usr/lib/
+rustc/lib/rustlib usr/lib/
+rustc/share/doc/rust usr/share/doc/
+rustc/share/man/man1/rust*.1* usr/share/man/man1/

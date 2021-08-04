@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+build:
+	echo noop
+
+binary:
+	dh_testroot
+	dh_shlibdeps
+	dh_install
+	dh_installdeb
+	dh_gencontrol
+	dh_lintian
+	dh_md5sums
+	dh_builddeb
+
+%:
+	dh $@
