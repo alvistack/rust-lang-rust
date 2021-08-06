@@ -12,13 +12,16 @@ download:
 		https://static.rust-lang.org/dist/rust-$(VERSION)-x86_64-unknown-linux-gnu.tar.gz
 	tar -zxv \
 		--strip-components=1 \
-		-f .cache/rust-$(VERSION)-x86_64-unknown-linux-gnu.tar.gz 
+		-f .cache/rust-$(VERSION)-x86_64-unknown-linux-gnu.tar.gz
 
 .PHONY: dist-gzip
 dist-gzip:
 	rm -rf .cache
 	tar -zcv \
 		--exclude='./.git' \
+		--exclude='./debian/cargo' \
+		--exclude='./debian/libstd-rust-dev' \
+		--exclude='./debian/rustc' \
 		-f ../rustc_$(VERSION).orig.tar.gz .
 
 .PHONY: deb

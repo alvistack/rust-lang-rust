@@ -1,8 +1,6 @@
 cargo: embedded-library
-cargo: file-name-contains-wildcard-character
 cargo: missing-dependency-on-libc
 cargo: no-changelog
 cargo: no-copyright-file
-cargo: stray-folder-in-manual
 cargo: uncompressed-manual-page
 cargo: unstripped-binary-or-object

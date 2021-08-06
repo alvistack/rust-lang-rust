@@ -10,6 +10,7 @@ Build-Depends:
  debhelper,
  debhelper-compat (= 10),
  ca-certificates,
+ chrpath,
  curl,
 
 Package: rustc
@@ -27,10 +28,36 @@ Description: Rust systems programming language
  generic programming and meta-programming, in both static and dynamic
  styles.
 Depends:
+ ${shlibs:Depends},
  ${misc:Depends},
+ binutils,
  gcc,
  libc-dev,
- binutils
+ libstd-rust-dev,
+
+Package: libstd-rust-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Description: Rust standard libraries - development files
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains development files for the standard Rust libraries,
+ needed to compile Rust programs. It may also be installed on a system
+ of another host architecture, for cross-compiling to this architecture.
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
 
 Package: cargo
 Architecture: any
@@ -49,6 +76,7 @@ Description: Rust package manager
  Cargo downloads your Rust project’s dependencies and compiles your
  project.
 Depends:
+ ${shlibs:Depends},
  ${misc:Depends},
  binutils,
  gcc | clang | c-compiler,

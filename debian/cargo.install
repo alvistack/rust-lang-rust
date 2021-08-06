@@ -1,6 +1,6 @@
-cargo/bin/cargo usr/bin/
-cargo/etc/bash_completion.d/cargo usr/share/bash_completion/
-cargo/libexec/cargo-credential-1password usr/libexec/
+cargo/bin/* usr/bin/
+cargo/etc/bash_completion.d/* usr/share/bash-completion/completions/
+cargo/libexec/* usr/libexec/
 cargo/share/doc/cargo usr/share/doc/
 cargo/share/man/man1/cargo*.1* usr/share/man/man1/
-cargo/share/zsh/site-functions/_cargo usr/share/zsh/site-functions/
+cargo/share/zsh/site-functions/* usr/share/zsh/site-functions/

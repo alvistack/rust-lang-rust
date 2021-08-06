@@ -1,0 +1,5 @@
+libstd-rust-dev: arch-dependent-file-not-in-arch-specific-directory
+libstd-rust-dev: no-changelog
+libstd-rust-dev: no-copyright-file
+libstd-rust-dev: undeclared-elf-prerequisites
+libstd-rust-dev: unstripped-binary-or-object

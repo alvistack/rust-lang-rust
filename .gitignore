@@ -6,6 +6,11 @@ README.md
 cargo/
 clippy-preview/
 components
+debian/*.debhelper.log
+debian/.debhelper/
+debian/cargo/
+debian/libstd-rust-dev/
+debian/rustc/
 git-commit-hash
 install.sh
 llvm-tools-preview/

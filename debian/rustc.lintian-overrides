@@ -1,5 +1,4 @@
 rustc: custom-library-search-path
-rustc: file-name-contains-wildcard-character
 rustc: hardening-no-pie
 rustc: hardening-no-relro
 rustc: lacks-ldconfig-trigger
@@ -10,6 +9,5 @@ rustc: no-manual-page
 rustc: no-shlibs
 rustc: package-name-doesnt-match-sonames
 rustc: sharedobject-in-library-directory-missing-soname
-rustc: subdir-in-usr-bin
 rustc: uncompressed-manual-page
 rustc: unstripped-binary-or-object

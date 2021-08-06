@@ -1,3 +1,4 @@
 cargo_1.54.0-1_amd64.deb devel optional
+libstd-rust-dev_1.54.0-1_amd64.deb libdevel optional
 rustc_1.54.0-1_amd64.buildinfo devel optional
 rustc_1.54.0-1_amd64.deb devel optional
