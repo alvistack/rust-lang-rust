@@ -1,0 +1,4 @@
+rust source: no-debian-changes
+rust source: not-binnmuable-any-depends-any
+rust source: source-is-missing
+rust source: version-substvar-for-external-package
