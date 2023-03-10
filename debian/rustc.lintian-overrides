@@ -1,0 +1,9 @@
+rustc: copyright-without-copyright-notice
+rustc: custom-library-search-path
+rustc: hardening-no-pie
+rustc: hardening-no-relro
+rustc: initial-upload-closes-no-bugs
+rustc: no-manual-page
+rustc: package-name-doesnt-match-sonames
+rustc: sharedobject-in-library-directory-missing-soname
+rustc: zero-byte-file-in-doc-directory
