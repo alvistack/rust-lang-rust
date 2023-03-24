@@ -10,6 +10,7 @@ install.sh
 llvm-tools-preview/
 rls-preview/
 rust-analysis-x86_64-unknown-linux-gnu/
+rust-analyzer-preview/
 rust-demangler-preview/
 rust-docs/
 rust-installer-version
