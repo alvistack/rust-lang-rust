@@ -1,0 +1,49 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_configure:
+
+override_dh_auto_build:
+
+override_dh_auto_install:
+	./install.sh \
+		--destdir=debian/tmp \
+		--prefix=usr \
+		--sysconfdir=debian/tmp/etc \
+		--bindir=debian/tmp/usr/bin \
+		--libdir=debian/tmp/usr/lib \
+		--datadir=debian/tmp/usr/share \
+		--mandir=debian/tmp/usr/share/man \
+		--docdir=debian/tmp/usr/share/doc \
+		--components=rustc,cargo,rust-std-x86_64-unknown-linux-gnu \
+		--disable-ldconfig \
+		--verbose
+	mkdir -p debian/tmp/usr/share/bash-completion/completions
+	mv debian/tmp/etc/bash_completion.d/* debian/tmp/usr/share/bash-completion/completions/
+	rm -rf debian/tmp/usr/lib/rustlib/install.log
+	rm -rf debian/tmp/usr/lib/rustlib/manifest-*
+	rm -rf debian/tmp/usr/lib/rustlib/uninstall.sh
+	rm -rf debian/tmp/usr/lib/rustlib/rust-installer-version
+	rm -rf debian/tmp/usr/libexec/rust-analyzer-proc-macro-srv
+	rm -rf debian/tmp/usr/share/doc/*
+	chrpath -d debian/tmp/usr/lib/rustlib/*/bin/rust-lld
+	fdupes -qnrps debian/tmp
+	dh_auto_install
+
+override_dh_strip:
+
+override_dh_strip_nondeterminism:
+
+override_dh_shlibdeps:
+
+override_dh_makeshlibs:
+
+override_dh_dwz:
+
+override_dh_auto_test:
+
+override_dh_auto_clean:
+
+%:
+	dh $@
