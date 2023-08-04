@@ -1,0 +1,3 @@
+addFilter("binary-or-shlib-defines-rpath")
+addFilter("files-duplicated-waste")
+addFilter("missing-hash-section")
