@@ -1,0 +1,8 @@
+usr/bin/rust-gdb
+usr/bin/rust-gdbgui
+usr/bin/rust-lldb
+usr/bin/rustc
+usr/bin/rustdoc
+usr/lib/*.so
+usr/lib/rustlib/*
+usr/share/man/man1/rust*.1*
