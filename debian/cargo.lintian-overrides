@@ -1,0 +1,4 @@
+cargo: copyright-without-copyright-notice
+cargo: embedded-library
+cargo: initial-upload-closes-no-bugs
+cargo: zero-byte-file-in-doc-directory
