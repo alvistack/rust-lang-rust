@@ -1,0 +1,5 @@
+rust (100:1.76.0-1) UNRELEASED; urgency=medium
+
+  * https://github.com/rust-lang/rust/releases/tag/1.76.0
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Fri, 09 Feb 2024 15:04:32 +0800
