@@ -1,0 +1,5 @@
+addFilter("binary-or-shlib-defines-rpath")
+addFilter("devel-file-in-non-devel-package")
+addFilter("files-duplicated-waste")
+addFilter("missing-hash-section")
+addFilter("shlib-policy-name-error")
