@@ -6,11 +6,14 @@ cargo/
 clippy-preview/
 components
 git-commit-hash
+git-commit-info
 install.sh
 llvm-tools-preview/
 rls-preview/
 rust-analysis-x86_64-unknown-linux-gnu/
+rust-analyzer-preview/
 rust-demangler-preview/
+rust-docs-json-preview/
 rust-docs/
 rust-installer-version
 rust-std-x86_64-unknown-linux-gnu/
