@@ -1,0 +1,7 @@
+*.substvars
+*debhelper*
+.debhelper
+cargo
+files
+rustc
+tmp
